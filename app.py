@@ -10,7 +10,7 @@ if st.button("Generate QR"):
     qr = qrcode.make(data)
     qr.save("qr.png")
 
-    image= Image.open("qr.png")
+    image= Image.open("qr.jpg")
    st.image(img,caption="Generated QR Code")
 
    with open("qr.png","rb") as f:
